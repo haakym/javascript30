@@ -117,9 +117,10 @@
         if (groupCheck.length > 0) {
           if (shiftIsDown) {
             groupCheck.push(index);
-            checkGroup(groupCheck); 
+            checkGroup(groupCheck);
           } else {
             groupCheck.pop();
+            groupCheck.push(index);
           }        
         } else if (groupCheck.length === 0) {
           groupCheck.push(index);
